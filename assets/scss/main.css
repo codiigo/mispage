@@ -12,7 +12,7 @@ section .jumbotron {
 }
 
 .modal-backdrop {
-  z-index: -1;
+  z-index: 0;
 }
 
 footer a,
@@ -35,17 +35,43 @@ mark {
 }
 
 .fixed-navbar {
-  position: absolute;
-  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  padding: 20px 0;
   z-index: 2;
-  height: auto;
 }
 
 .fixed-navbar .logo {
   height: 100px;
+}
+
+.fixed-navbar .logo-name {
+  color: white;
+  text-shadow: grey 1px 1px;
+  font-size: 21pt;
+  width: 200px;
+  margin-left: 10px;
+  line-height: 1;
+}
+
+.fixed-navbar .navbar-link {
+  font-weight: bolder;
+  text-shadow: grey 1px 1px;
+  text-decoration: none;
+  color: white;
+  margin: 0 1vw;
+  border: none;
+}
+
+.fixed-navbar .navbar-link:hover {
+  background: #477F2D;
 }
 
 .header-image-offset {
@@ -72,6 +98,8 @@ mark {
   text-align: center;
   width: 100vw;
   color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .text-overlay h1 {
@@ -247,6 +275,18 @@ mark {
   margin: 0;
 }
 
+.btn-info {
+  background: white;
+  color: #477F2D;
+  border: none;
+  font-weight: bolder;
+}
+
+.btn-info:hover {
+  background: white;
+  color: #477F2D;
+}
+
 .remove-list-style {
   list-style: none;
   font-weight: bolder;
@@ -267,5 +307,31 @@ mark {
 
 section iframe {
   margin: 15px 0;
+}
+
+.three-links {
+  background: #477F2D;
+}
+
+.three-links .flex-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.three-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 18pt;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.btn-outline-secondary:hover {
+  background: #477F2D;
+  border-color: #477F2D;
 }
 /*# sourceMappingURL=main.css.map */
