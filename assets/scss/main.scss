@@ -19,6 +19,10 @@ section {
   }
 }
 
+.modal-backdrop {
+  z-index: -1;
+}
+
 footer {
 
   a,
@@ -41,36 +45,49 @@ mark {
   color: white;
 }
 
-.tint {
-  position: relative;
-  z-index: 1;
-  top: 8vh;
 
-  a {
-    color: white;
-    font-weight: bolder;
-    background: rgba(0, 0, 0, 0.3);
+.fixed-navbar {
+  position: absolute;
+  padding: 20px 0;
+  display: flex;
+  z-index: 2;
+  height: auto;
+
+  .logo {
+    height: 100px;
   }
 }
 
-.desktop-logo {
-  height: 70px;
-  width: auto;
-}
-
-.topbar-search {
-  margin-top: 5px;
-  height: 28px;
-  font-size: 11pt;
-}
-
-.current-page {
-  padding-bottom: 0;
-  border-bottom: 2px solid $crete;
+.header-image-offset {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 .header-image {
+  height: 100vh;
+  width: 100vw;
   object-fit: cover;
+}
+
+.text-overlay {
+  padding: 1em;
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+  color: white;
+  // background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+
+  h1 {
+    margin-top: 0;
+  }
+
+  strong {
+    text-decoration: underline;
+  }
 }
 
 .jumbotron-text {
@@ -236,33 +253,6 @@ mark {
   }
 }
 
-.text-overlay {
-  padding: 1em;
-  position: absolute;
-  height: 80vh;
-  width: 40vw;
-  right: 0;
-  z-index: 1;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-
-  h1 {
-    margin-top: 20vh;
-  }
-
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 3px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-  }
-
-  strong {
-    text-decoration: underline;
-  }
-}
 
 .remove-list-style {
   list-style: none;
@@ -284,42 +274,4 @@ mark {
 
 section iframe {
   margin: 15px 0;
-}
-
-@media screen and (min-width: 1920px) {
-  .header-image {
-    height: 1080px;
-  }
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  //
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  //
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  //
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  //
-}
-
-// Preset: WXGA
-@media (min-width: 1200px) and (max-width: 1368px) {
-  .header-image {
-    width: 100%;
-    height: 74vh;
-  }
-}
-
-@media screen and (min-width: 372px) {
-  //? add something for navbar phone
 }
