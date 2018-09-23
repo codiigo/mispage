@@ -68,23 +68,39 @@ mark {
   font-weight: bolder;
 }
 
-.showcase-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bolder;
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
 }
 
-.showcase-description :first-child {
+.text-box .showcase-main {
+  display: block;
+  font-size: 2em;
+}
+
+.text-box .showcase-sub {
+  display: block;
+}
+
+.text-box .showcase-location {
+  position: absolute;
+  bottom: -30vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-top: 5px solid white;
-  width: 130px;
+  padding-top: 5px;
+}
+
+.showcase-description {
+  position: relative;
+  font-weight: bolder;
+  text-align: center;
 }
 
 #showcase .carousel-caption {
