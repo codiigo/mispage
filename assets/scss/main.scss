@@ -61,7 +61,7 @@ mark {
 
   .logo-name {
     color: white;
-    text-shadow: grey 1px 1px;
+    // text-shadow: grey 1px 1px;
     font-size: 21pt;
     width: 200px;
     margin-left: 10px;
@@ -70,7 +70,7 @@ mark {
 
   .navbar-link {
     font-weight: bolder;
-    text-shadow: grey 1px 1px;
+    // text-shadow: grey 1px 1px;
     text-decoration: none;
     color: white;
     margin: 0 1vw;
@@ -80,6 +80,15 @@ mark {
   .navbar-link:hover {
     background: $crete;
   }
+}
+
+
+.tint {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,0.3);
 }
 
 .header-image-offset {
@@ -98,12 +107,11 @@ mark {
 .text-overlay {
   padding: 1em;
   position: absolute;
-  z-index: 4;
+  z-index: 1;
   bottom: 0;
   text-align: center;
-  width: 100vw;
   color: white;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  // background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
 
   h1 {
     margin-top: 0;
@@ -333,4 +341,8 @@ section iframe {
 .btn-outline-secondary:hover {
   background: $crete;
   border-color: $crete;
+}
+
+.z-index-4 {
+  z-index: 4;
 }
