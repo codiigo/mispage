@@ -17,7 +17,7 @@ This is the last resort. If this is necessary, you may find the article to Reset
 ### TODO LIST
 
 - [x] Git Repo
-- [ ] Transparent Navbar
+- [x] Transparent Navbar
 - <strike>[ ] sftp Filezilla</strike> `not working`
 - [ ] [Formspree](https://formspree.io)
 - [ ] Mobile Responsive design

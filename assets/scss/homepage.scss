@@ -5,83 +5,10 @@ $crete: #477F2D;
 //   font-family: 'IBM Plex Sans', sans-serif;
 // }
 
-main,
-header {
-  margin-bottom: 1em;
-}
-
-article {
-  margin: 1em 0;
-}
-
-section {
-  .jumbotron {
-    margin-bottom: 1vh;
-  }
-}
-
-.modal-backdrop {
-  z-index: 0;
-}
-
-footer {
-
-  a,
-  a:hover {
-    text-decoration: none;
-  }
-
-  a {
-    margin: 0.3em 0;
-    color: grey;
-  }
-
-  a:hover {
-    color: $crete;
-  }
-}
-
 mark {
   background-color: $crete;
   color: white;
 }
-
-
-.fixed-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  padding: 20px 0;
-  z-index: 2;
-
-  .logo {
-    height: 100px;
-  }
-
-  .logo-name {
-    color: white;
-    // text-shadow: grey 1px 1px;
-    font-size: 21pt;
-    width: 200px;
-    margin-left: 10px;
-    line-height: 1;
-  }
-
-  .navbar-link {
-    font-weight: bolder;
-    // text-shadow: grey 1px 1px;
-    text-decoration: none;
-    color: white;
-    margin: 0 1vw;
-    border: none;
-  }
-
-  .navbar-link:hover {
-    background: $crete;
-  }
-}
-
 
 .tint {
   position: absolute;
@@ -285,19 +212,6 @@ mark {
   }
 }
 
-.btn-info {
-  background: white;
-  color: $crete;
-  border: none;
-  font-weight: bolder;
-
-}
-
-.btn-info:hover {
-  background: white;
-  color: $crete;
-}
-
 .remove-list-style {
   list-style: none;
   font-weight: bolder;
@@ -314,35 +228,4 @@ mark {
       color: $crete;
     }
   }
-}
-
-section iframe {
-  margin: 15px 0;
-}
-
-.three-links {
-  background: $crete;
-
-  .flex-links {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    font-size: 18pt;
-    padding: 10px;
-    text-transform: uppercase;
-  }
-}
-
-.btn-outline-secondary:hover {
-  background: $crete;
-  border-color: $crete;
-}
-
-.z-index-4 {
-  z-index: 4;
 }
