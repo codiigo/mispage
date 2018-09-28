@@ -8,7 +8,7 @@ mark {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .header-image-offset {
@@ -89,7 +89,7 @@ mark {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #showcase img {

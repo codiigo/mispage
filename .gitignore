@@ -3,7 +3,7 @@
 
 
 ########## IF PUSHING TO MASTER BRANCH ##########
-#        PLEASE DONT FORGET TO .gitignore
+#         PLEASE DONT FORGET TO INCLUDE
 #             .scss FILE EXTENSION!
 #               e.g. *.scss
 #################################################
