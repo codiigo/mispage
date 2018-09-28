@@ -105,11 +105,10 @@ footer a:hover {
 .sub-header-image .sub-header-location {
   position: absolute;
   bottom: 0;
-  padding: 5px;
-  margin-bottom: 1vh;
+  margin-bottom: 10px;
   font-weight: bolder;
   color: white;
-  border-bottom: 5px solid white;
+  border-top: 5px solid white;
   z-index: 1;
 }
 

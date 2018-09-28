@@ -1,0 +1,33 @@
+$crete: #477F2D;
+// $crete: rgba(71, 127, 45, 0.856);
+
+// body {
+//   font-family: 'IBM Plex Sans', sans-serif;
+// }
+
+// .grid-container {
+//   display: grid;
+//   grid-gap: 1vw;
+//   grid-template-columns: 1fr 1fr;
+//   grid-auto-rows: minmax(200px, 1fr);
+//   grid-template-areas:
+//         "picture article"
+//         "section section";
+//   >:first-child {
+//     grid-column: picture;
+//   }
+//   >:nth-child(2) {
+//     grid-column: article;
+//   }
+//   >:nth-child(1n+3) {
+//     grid-column: section;
+//   }
+// }
+
+.carousel-img {
+  display: inline-block;
+}
+
+.welcome {
+  display: inline;
+}
