@@ -71,17 +71,18 @@
 
   <main role="main">
     <article class="container grid-container">
-      <section class="carousel-img">
-        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+      <section class="welcome">
+        <!-- Carousel slider -->
+        <div id="carouselExampleControls" class="carousel slide carousel-fade carousel-img" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="https://source.unsplash.com/random/400x201" alt="First slide">
+              <img class="d-block w-100" src="https://source.unsplash.com/random/400x301" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://source.unsplash.com/random/400x202" alt="Second slide">
+              <img class="d-block w-100" src="https://source.unsplash.com/random/400x302" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://source.unsplash.com/random/400x203" alt="Third slide">
+              <img class="d-block w-100" src="https://source.unsplash.com/random/400x303" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -93,9 +94,8 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </section>
+        <!-- End of Carousel slider -->
 
-      <section class="welcome">
         <h1>School's Welcome</h1>
         <p><b>Mooltripakdee International School(MIS)</b> is a new and developing International School that offers
           Quality Education to children between 2 and 15 years of age.</p>
@@ -106,14 +106,16 @@
           MIS secondary school (children aged between 11 and 15 years old) will be a continuation of the English
           National
           Curriculum taught by qualified subject teachers.</p>
-        <p>Set in beautiful grounds, MIS is located on a quiet and peaceful site in the countryside just a few
+        <p>Set in beautiful grounds, <span class="tooltip-text" title="Mooltripakdee International School">MIS</span> is located on a quiet and peaceful site in the countryside just a few
           kilometers
           away from central Pattaya along the Chaiyapornvitee Road near Mabprachan Lake</p>
         Sincerely<br>
         School Management
       </section>
 
+
       <section>
+        <hr>
         <h2>History</h2>
         <p>Mooltripakdee International School opened its doors to students on 25th August 2010. The school was built
           and
@@ -280,6 +282,9 @@
     $('#header-carousel').carousel({
       interval: 5000
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
 
   <!-- <script id="CookieDeclaration" src="https://consent.cookiebot.com/889c84d8-1246-4048-b06c-b4cb9c1dfef1/cd.js" type="text/javascript"

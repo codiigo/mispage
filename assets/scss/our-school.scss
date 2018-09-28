@@ -8,26 +8,31 @@ $crete: #477F2D;
 // .grid-container {
 //   display: grid;
 //   grid-gap: 1vw;
-//   grid-template-columns: 1fr 1fr;
+//   grid-template-columns: 1fr 1.25fr;
 //   grid-auto-rows: minmax(200px, 1fr);
 //   grid-template-areas:
-//         "picture article"
+//         "article picture"
 //         "section section";
-//   >:first-child {
+//   .carousel {
 //     grid-column: picture;
 //   }
-//   >:nth-child(2) {
+//   >:first-child {
 //     grid-column: article;
 //   }
 //   >:nth-child(1n+3) {
 //     grid-column: section;
 //   }
 // }
-
-.carousel-img {
-  display: inline-block;
+section {
+  line-height: 200%;
 }
-
-.welcome {
-  display: inline;
+.carousel-img {
+  width: 40vw;
+  float: right;
+  top: 0;
+  margin-left: 10px;
+}
+.tooltip-text {
+  border-bottom: 1px dotted grey;
+  cursor: help;
 }

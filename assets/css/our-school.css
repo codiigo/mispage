@@ -1,8 +1,16 @@
-.carousel-img {
-  display: inline-block;
+section {
+  line-height: 200%;
 }
 
-.welcome {
-  display: inline;
+.carousel-img {
+  width: 40vw;
+  float: right;
+  top: 0;
+  margin-left: 10px;
+}
+
+.tooltip-text {
+  border-bottom: 1px dotted grey;
+  cursor: help;
 }
 /*# sourceMappingURL=our-school.css.map */
