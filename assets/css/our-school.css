@@ -7,6 +7,10 @@ section h4 {
   margin-bottom: 0;
 }
 
+section h1, section h2, section h4 {
+  color: #477F2D;
+}
+
 .carousel-img {
   width: 40vw;
   float: right;
