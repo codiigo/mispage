@@ -106,9 +106,8 @@ footer a:hover {
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
-  font-weight: bolder;
   color: white;
-  border-top: 5px solid white;
+  border-top: 3px solid white;
   z-index: 1;
 }
 

@@ -2,6 +2,11 @@ section {
   line-height: 200%;
 }
 
+section h4 {
+  margin-top: 5vh;
+  margin-bottom: 0;
+}
+
 .carousel-img {
   width: 40vw;
   float: right;
@@ -12,5 +17,11 @@ section {
 .tooltip-text {
   border-bottom: 1px dotted grey;
   cursor: help;
+}
+
+.blockquote {
+  border-left: 5px solid #477F2D;
+  padding-left: 5px;
+  max-width: 80%;
 }
 /*# sourceMappingURL=our-school.css.map */
