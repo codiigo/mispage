@@ -73,7 +73,6 @@ footer a:hover {
   text-align: center;
   padding-top: 5px;
   font-weight: bolder;
-  cursor: default;
 }
 
 .current-page:hover,
@@ -144,6 +143,18 @@ footer a:hover {
   text-transform: uppercase;
 }
 
+.three-links button {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 18pt;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 .btn-outline-secondary:hover {
   background: #477F2D;
   border-color: #477F2D;
@@ -151,5 +162,20 @@ footer a:hover {
 
 .z-index-4 {
   z-index: 4;
+}
+
+input.form-control,
+textarea.form-control {
+  border-color: #477F2D;
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+textarea.form-control:active,
+textarea.form-control:focus,
+input.form-control:active,
+input.form-control:focus {
+  border-color: #477F2D;
 }
 /*# sourceMappingURL=layout.css.map */

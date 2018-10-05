@@ -1,0 +1,18 @@
+$crete: #477F2D;
+// $crete: rgba(71, 127, 45, 0.856);
+
+// body {
+//   font-family: 'IBM Plex Sans', sans-serif;
+// }
+
+.btn-primary {
+  background: $crete;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus, {
+  border: none;
+  background: $crete;
+}
