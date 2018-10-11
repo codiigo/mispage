@@ -1,6 +1,8 @@
 $crete: #477F2D;
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+// Staff Photo Height: 400px
+
 body {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
@@ -59,7 +61,8 @@ main {
     > :nth-child(6),
     #kindergarten3,
     #year2class1,
-    #year6class2 {
+    #year3class2,
+    #year7class1 {
       grid-column: middle;
     }
 
@@ -67,7 +70,8 @@ main {
     > :nth-child(7),
     #preschoolA1,
     #year1class1,
-    #year4class1 {
+    #year4class1,
+    #year7class2 {
       grid-column: left;
     }
 
@@ -87,16 +91,12 @@ main {
   display: grid;
   padding: 1rem;
   color: white;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   justify-content: center;
   text-align: center;
 
-  > :nth-child(-n + 2) .orgchart__textbox--position {
+  > :nth-child(n + 1):nth-child(-n + 9) .orgchart__textbox--name {
     background: rgb(0, 51, 37);
-  }
-
-  > :nth-child(n + 3):nth-child(-n + 9) .orgchart__textbox--name {
-    background: rgb(4, 76, 41);
   }
 
   >:nth-child(10) .teaching-staff--title,
@@ -105,8 +105,23 @@ main {
   }
 
   >:nth-child(18) .teaching-staff--title,
-  > :nth-child(n + 19):nth-child(-n + 26) .orgchart__textbox--name {
+  > :nth-child(n + 19):nth-child(-n + 25) .orgchart__textbox--name {
     background: rgb(4, 130, 41);
+  }
+
+  >:nth-child(26) .teaching-staff--title,
+  > :nth-child(n + 27):nth-child(-n + 33) .orgchart__textbox--name {
+    background: rgb(1, 56, 89);
+  }
+
+  >:nth-child(34) .teaching-staff--title,
+  > :nth-child(n + 35):nth-child(-n + 38) .orgchart__textbox--name {
+    background: rgb(2, 88, 140);
+  }
+
+  >:nth-child(39) .teaching-staff--title,
+  > :nth-child(n + 40):nth-child(-n + 46) .orgchart__textbox--name {
+    background: rgb(2, 119, 189);
   }
 
   &__textbox {
