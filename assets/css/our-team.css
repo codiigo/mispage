@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background: #477F2D;
+  font-size: 62.5%;
+}
+
+.header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.header__title {
+  text-transform: uppercase;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+.header__title--bold {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.header__title--regular {
+  letter-spacing: 0.2rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.header__text-box--title {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 659px) {
+  .orgchart {
+    grid-auto-columns: 250px;
+  }
+}
+
+@media screen and (min-width: 659.98px) {
+  .orgchart {
+    grid-template: "left middle right";
+  }
+  .orgchart > :first-child,
+  .orgchart > :nth-child(2),
+  .orgchart > :nth-child(6),
+  .orgchart #kindergarten3,
+  .orgchart #year2class1,
+  .orgchart #year6class2 {
+    grid-column: middle;
+  }
+  .orgchart > :nth-child(3),
+  .orgchart > :nth-child(7),
+  .orgchart #preschoolA1,
+  .orgchart #year1class1,
+  .orgchart #year4class1 {
+    grid-column: left;
+  }
+  .orgchart .teaching-staff {
+    grid-column: span 3;
+  }
+}
+
+.info {
+  font-size: .75rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.orgchart {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  color: white;
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.orgchart > :nth-child(-n + 2) .orgchart__textbox--position {
+  background: #003325;
+}
+
+.orgchart > :nth-child(n + 3):nth-child(-n + 9) .orgchart__textbox--name {
+  background: #044c29;
+}
+
+.orgchart > :nth-child(10) .teaching-staff--title,
+.orgchart > :nth-child(n + 11):nth-child(-n + 17) .orgchart__textbox--name {
+  background: #046429;
+}
+
+.orgchart > :nth-child(18) .teaching-staff--title,
+.orgchart > :nth-child(n + 19):nth-child(-n + 26) .orgchart__textbox--name {
+  background: #048229;
+}
+
+.orgchart__textbox {
+  border: 2px solid darkslategray;
+  padding-bottom: 0.5rem;
+}
+
+.orgchart__textbox--position {
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+.orgchart__textbox--position img {
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.orgchart__textbox--name {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.teaching-staff--title {
+  margin-top: 10em;
+  border: 2px solid darkslategray;
+  font-size: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=our-team.css.map */

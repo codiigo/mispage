@@ -1,0 +1,149 @@
+$crete: #477F2D;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  background: $crete;
+  font-size: 62.5%
+}
+
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+
+  &__title {
+    text-transform: uppercase;
+    //display: inline-block;
+    flex-basis: 10%;
+
+    &--bold {
+      font-size: 2em;
+      font-weight: bolder;
+    }
+
+    &--regular {
+      letter-spacing: 0.2rem;
+      display: block;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__text-box {
+    &--title {
+      font-weight: bolder;
+    }
+  }
+}
+
+//min of 659px
+@media screen and (max-width: 659px) {
+  .orgchart {
+    grid-auto-columns: 250px;
+  }
+}
+
+@media screen and (min-width: 659.98px) {
+  .orgchart {
+    grid-template: "left middle right";
+
+    > :first-child,
+    > :nth-child(2),
+    > :nth-child(6),
+    #kindergarten3,
+    #year2class1,
+    #year6class2 {
+      grid-column: middle;
+    }
+
+    > :nth-child(3),
+    > :nth-child(7),
+    #preschoolA1,
+    #year1class1,
+    #year4class1 {
+      grid-column: left;
+    }
+
+    .teaching-staff {
+      grid-column: span 3;
+    }
+  }
+}
+
+.info {
+  font-size: .75rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.orgchart {
+  display: grid;
+  padding: 1rem;
+  color: white;
+  grid-gap: 2rem;
+  justify-content: center;
+  text-align: center;
+
+  > :nth-child(-n + 2) .orgchart__textbox--position {
+    background: rgb(0, 51, 37);
+  }
+
+  > :nth-child(n + 3):nth-child(-n + 9) .orgchart__textbox--name {
+    background: rgb(4, 76, 41);
+  }
+
+  >:nth-child(10) .teaching-staff--title,
+  > :nth-child(n + 11):nth-child(-n + 17) .orgchart__textbox--name {
+    background: rgb(4, 100, 41);
+  }
+
+  >:nth-child(18) .teaching-staff--title,
+  > :nth-child(n + 19):nth-child(-n + 26) .orgchart__textbox--name {
+    background: rgb(4, 130, 41);
+  }
+
+  &__textbox {
+    border: 2px solid darkslategray;
+    //color: #ffeead;
+    padding-bottom: 0.5rem;
+
+    &--position {
+      letter-spacing: 0.1rem;
+      padding: 0.5rem 0;
+
+      img {
+        height: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &--name {
+      padding: 0 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  //end of &__text-box
+}
+
+//end of .orgchart
+
+.teaching-staff--title {
+  margin-top: 10em;
+  border: 2px solid darkslategray;
+  font-size: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+  text-transform: uppercase;
+}
