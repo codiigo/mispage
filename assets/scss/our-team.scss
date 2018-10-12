@@ -34,11 +34,12 @@ main {
     &--regular {
       letter-spacing: 0.2rem;
       display: block;
-      padding-bottom: 2rem;
     }
   }
 
   &__text-box {
+    width: 50%;
+
     &--title {
       font-weight: bolder;
     }
@@ -47,6 +48,10 @@ main {
 
 //min of 659px
 @media screen and (max-width: 659px) {
+  .header__text-box {
+    width: 100%;
+  }
+
   .orgchart {
     grid-auto-columns: 250px;
   }
@@ -56,9 +61,9 @@ main {
   .orgchart {
     grid-template: "left middle right";
 
-    > :first-child,
     > :nth-child(2),
-    > :nth-child(6),
+    > :nth-child(3),
+    > :nth-child(7),
     #kindergarten3,
     #year2class1,
     #year3class2,
@@ -66,8 +71,8 @@ main {
       grid-column: middle;
     }
 
-    > :nth-child(3),
-    > :nth-child(7),
+    > :nth-child(4),
+    > :nth-child(8),
     #preschoolA1,
     #year1class1,
     #year4class1,
@@ -75,7 +80,8 @@ main {
       grid-column: left;
     }
 
-    .teaching-staff {
+    .teaching-staff,
+    .main-office {
       grid-column: span 3;
     }
   }
@@ -95,33 +101,44 @@ main {
   justify-content: center;
   text-align: center;
 
-  > :nth-child(n + 1):nth-child(-n + 9) .orgchart__textbox--name {
-    background: rgb(0, 51, 37);
+  > :nth-child(1) .main-office--title,
+  > :nth-child(n + 2):nth-child(-n + 10) .orgchart__textbox--name {
+    background-color: rgb(198, 117, 3);
   }
 
-  >:nth-child(10) .teaching-staff--title,
-  > :nth-child(n + 11):nth-child(-n + 17) .orgchart__textbox--name {
-    background: rgb(4, 100, 41);
-  }
-
-  >:nth-child(18) .teaching-staff--title,
-  > :nth-child(n + 19):nth-child(-n + 25) .orgchart__textbox--name {
+  > :nth-child(11) .teaching-staff--title,
+  > :nth-child(n + 12):nth-child(-n + 18) .orgchart__textbox--name {
     background: rgb(4, 130, 41);
   }
 
-  >:nth-child(26) .teaching-staff--title,
-  > :nth-child(n + 27):nth-child(-n + 33) .orgchart__textbox--name {
+  > :nth-child(19) .teaching-staff--title,
+  > :nth-child(n + 20):nth-child(-n + 26) .orgchart__textbox--name {
+    background: rgb(4, 100, 41);
+  }
+
+  > :nth-child(27) .teaching-staff--title,
+  > :nth-child(n + 28):nth-child(-n + 34) .orgchart__textbox--name {
     background: rgb(1, 56, 89);
   }
 
-  >:nth-child(34) .teaching-staff--title,
-  > :nth-child(n + 35):nth-child(-n + 38) .orgchart__textbox--name {
+  > :nth-child(35) .teaching-staff--title,
+  > :nth-child(n + 36):nth-child(-n + 39) .orgchart__textbox--name {
     background: rgb(2, 88, 140);
   }
 
-  >:nth-child(39) .teaching-staff--title,
-  > :nth-child(n + 40):nth-child(-n + 46) .orgchart__textbox--name {
+  > :nth-child(40) .teaching-staff--title,
+  > :nth-child(n + 41):nth-child(-n + 42) .orgchart__textbox--name {
     background: rgb(2, 119, 189);
+  }
+
+  > :nth-child(43) .teaching-staff--title,
+  > :nth-child(n + 44):nth-child(-n + 50) .orgchart__textbox--name {
+    background: rgb(72, 61, 139);
+  }
+
+  > :nth-child(51) .teaching-staff--title,
+  > :nth-child(n + 52):nth-child(-n + 54) .orgchart__textbox--name {
+    background: rgb(24, 18, 59);
   }
 
   &__textbox {
@@ -151,8 +168,9 @@ main {
 
 //end of .orgchart
 
-.teaching-staff--title {
-  margin-top: 10em;
+.teaching-staff--title,
+.main-office--title {
+  margin-top: 10vh;
   border: 2px solid darkslategray;
   font-size: 2rem;
   padding: 1rem;
