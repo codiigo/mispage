@@ -19,7 +19,8 @@ This is the last resort. If this is necessary, you may find the article to Reset
 - [x] Git Repo
 - [x] Transparent Navbar
 - <strike>[ ] sftp Filezilla</strike> `not working`
-- [ ] [Formspree](https://formspree.io)
+- [ ] [Formspree](https://formspree.io) `OR use MailThis.to`
+- [ ] [MailThis.to](https://mailthis.to/)
 - [ ] Mobile Responsive design
 - [ ] [Frontend Checklist](https://frontendchecklist.io)
 - [x] Privacy & Cookie Policy
