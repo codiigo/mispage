@@ -103,7 +103,7 @@ main {
 
   > :nth-child(1) .main-office--title,
   > :nth-child(n + 2):nth-child(-n + 10) .orgchart__textbox--name {
-    background-color: rgb(198, 117, 3);
+    background: rgb(198, 117, 3);
   }
 
   > :nth-child(11) .teaching-staff--title,

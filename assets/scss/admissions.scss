@@ -1,6 +1,27 @@
 $crete: #477F2D;
 $grey: #DEE2E6;
 
+aside ul {
+  padding-left: 0;
+}
+
+aside ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+aside a:link,
+aside a:visited {
+  color: black;
+}
+
+aside a:hover,
+aside a:active,
+aside a:focus {
+  color: $crete;
+  text-decoration: none;
+}
+
 mark {
   background: $crete;
   color: white;
@@ -20,6 +41,9 @@ table {
   }
 }
 
+aside {
+  padding-top: 1rem;
+}
 
 h1,
 h2,

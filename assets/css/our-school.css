@@ -28,4 +28,39 @@ section h1, section h2, section h4 {
   padding-left: 5px;
   max-width: 80%;
 }
+
+aside {
+  padding-top: 1rem;
+}
+
+aside ul {
+  padding-left: 0;
+}
+
+aside ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+aside a:link,
+aside a:visited {
+  color: black;
+}
+
+aside a:hover,
+aside a:active,
+aside a:focus {
+  color: #477F2D;
+  text-decoration: none;
+}
+
+.sticky-parent {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 /*# sourceMappingURL=our-school.css.map */

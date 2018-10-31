@@ -1,3 +1,24 @@
+aside ul {
+  padding-left: 0;
+}
+
+aside ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+aside a:link,
+aside a:visited {
+  color: black;
+}
+
+aside a:hover,
+aside a:active,
+aside a:focus {
+  color: #477F2D;
+  text-decoration: none;
+}
+
 mark {
   background: #477F2D;
   color: white;
@@ -10,6 +31,10 @@ table {
 .table .thead-dark th {
   background-color: #477F2D;
   border-color: #DEE2E6;
+}
+
+aside {
+  padding-top: 1rem;
 }
 
 h1,
