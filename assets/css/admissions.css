@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=admissions.css.map */
+mark {
+  background: #477F2D;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table .thead-dark th {
+  background-color: #477F2D;
+  border-color: #DEE2E6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #477F2D;
+}
+
+th.eyfs-absolute-position {
+  padding: 0;
+  margin: 0;
+}
+
+.eyfs-absolute-position {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border: 1px solid #DEE2E6;
+  white-space: nowrap;
+}
+
+.sticky-parent {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+/*# sourceMappingURL=admissions.css.map */
