@@ -177,4 +177,52 @@ main {
   word-spacing: 1rem;
   text-transform: uppercase;
 }
+
+aside {
+  margin-top: 10vh;
+  padding-top: 1rem;
+}
+
+aside ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+aside a:link,
+aside a:visited {
+  color: white;
+}
+
+aside a:hover,
+aside a:active,
+aside a:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.sticky-parent {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sticky h1,
+.sticky h2,
+.sticky h3,
+.sticky h4 {
+  color: white;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
 /*# sourceMappingURL=our-team.css.map */
