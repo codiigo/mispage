@@ -1,0 +1,58 @@
+$crete: #477F2D;
+$breadcrumb-divider: quote(">");
+
+h1,h2,h3,h4,h5 {
+  color: $crete;
+}
+
+// Breadcrumb
+.breadcrumb-item+.breadcrumb-item::before {
+  content: $breadcrumb-divider;
+}
+
+.breadcrumb-item {
+  
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: $crete;
+  }
+
+  &.active {
+    font-weight: bolder;
+  }
+}
+
+.underline {
+  border-bottom: 3px solid;
+}
+// End of Breadcrumb
+
+// Sticky sidebar
+aside {
+  padding-top: 1rem;
+}
+
+aside ul {
+  padding-left: 0;
+}
+
+aside ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.sticky-parent {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+// End of Sticky sidebar

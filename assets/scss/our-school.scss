@@ -51,6 +51,7 @@ section {
   max-width: 80%
 }
 
+// Sticky sidebar
 aside {
   padding-top: 1rem;
 }
@@ -84,3 +85,4 @@ aside a:focus {
   position: sticky;
   top: 0;
 }
+// End of Sticky sidebar
