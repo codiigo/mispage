@@ -21,11 +21,10 @@ mark {
 }
 
 .text-overlay #call-to-action {
-  font-size: 10vw;
+  font-size: 15vw;
+  line-height: 1;
   text-transform: uppercase;
   font-weight: bolder;
-  opacity: 0.6;
-  z-index: 1;
 }
 
 .text-overlay strong {

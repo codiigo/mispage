@@ -41,11 +41,11 @@ mark {
   // background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
 
   #call-to-action {
-    font-size: 10vw;
+    font-size: 15vw;
+    line-height: 1;
     text-transform: uppercase;
     font-weight: bolder;
-    opacity: 0.6;
-    z-index: 1;
+    // opacity: 0.6;
   }
 
   strong {

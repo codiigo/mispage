@@ -46,7 +46,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  padding: 20px 0;
+  // padding: 20px 0;
   z-index: 2;
 
   .logo {
@@ -55,9 +55,11 @@ footer {
 
   .logo-name {
     color: white;
-    // text-shadow: grey 1px 1px;
     font-size: 21pt;
-    width: 200px;
+    display: inline-block;
+    transform: translateY(40%);
+    width: 170px;
+    margin-top: 0;
     margin-left: 10px;
     line-height: 1;
   }
@@ -140,11 +142,12 @@ footer {
   .flex-links {
     display: flex;
     justify-content: space-around;
+    color: white;
   }
 
   a {
+    cursor: pointer;
     text-decoration: none;
-    color: white;
     font-weight: bolder;
     font-size: 18pt;
     padding: 10px;
@@ -165,9 +168,16 @@ footer {
   }
 }
 
+.btn-outline-secondary {
+  color: $crete;
+  border-color: $crete;
+  font-weight: bolder;
+}
+
 .btn-outline-secondary:hover {
   background: $crete;
   border-color: $crete;
+  color: white;
 }
 
 .z-index-4 {
@@ -188,4 +198,9 @@ textarea.form-control:focus,
 input.form-control:active,
 input.form-control:focus {
   border-color: $crete;
+}
+
+// Honeypot
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
 }

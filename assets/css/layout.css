@@ -39,7 +39,6 @@ footer a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  padding: 20px 0;
   z-index: 2;
 }
 
@@ -50,7 +49,11 @@ footer a:hover {
 .fixed-navbar .logo-name {
   color: white;
   font-size: 21pt;
-  width: 200px;
+  display: inline-block;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  width: 170px;
+  margin-top: 0;
   margin-left: 10px;
   line-height: 1;
 }
@@ -132,11 +135,12 @@ footer a:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: white;
 }
 
 .three-links a {
+  cursor: pointer;
   text-decoration: none;
-  color: white;
   font-weight: bolder;
   font-size: 18pt;
   padding: 10px;
@@ -155,9 +159,16 @@ footer a:hover {
   box-shadow: none !important;
 }
 
+.btn-outline-secondary {
+  color: #477F2D;
+  border-color: #477F2D;
+  font-weight: bolder;
+}
+
 .btn-outline-secondary:hover {
   background: #477F2D;
   border-color: #477F2D;
+  color: white;
 }
 
 .z-index-4 {
@@ -177,5 +188,10 @@ textarea.form-control:focus,
 input.form-control:active,
 input.form-control:focus {
   border-color: #477F2D;
+}
+
+#honeypot {
+  display: none;
+  /*makes the field not visible to humans*/
 }
 /*# sourceMappingURL=layout.css.map */

@@ -28,15 +28,14 @@
     crossorigin="anonymous">
 
   <title>Welcome &vert; Mooltripakdee International School</title>
-  <!-- cookiebot consent banner -->
-  <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="889c84d8-1246-4048-b06c-b4cb9c1dfef1" type="text/javascript"
-  async></script> -->
 </head>
 
 <body>
-  <div class="tint">
-    <nav class="container">
-      <div class="fixed-navbar">
+  <nav class="tint">
+    <div class="container">
+
+      <!-- desktop view -->
+      <div class="fixed-navbar d-none d-lg-block">
         <span>
           <a href="/">
             <img class="logo" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537496833/mis/mis-logo.png"
@@ -50,22 +49,25 @@
         <a href="events" class="btn btn-outline-success navbar-link">Events</a>
         <a href="our-team" class="btn btn-outline-success navbar-link">Our Team</a>
         <a href="contact-us" class="btn btn-outline-success navbar-link">Contact Us</a>
-        <!-- Button trigger modal -->
-        <!-- <a class="btn" data-toggle="modal" data-target="#enquiryForm" href="#">Enquiry</a> -->
       </div>
-    </nav>
-  </div>
+      <!-- end - desktop view -->
+
+      <!-- mobile view -->
+      <!-- end - mobile view -->
+    </div>
+  </nav>
 
   <header role="banner">
 
-    <div class="overflow-hidden">
+    <div class="overflow-hidden d-none d-lg-block">
       <div class="text-overlay text-center">
-        <span id="call-to-action">What makes MIS&nbsp;<strong>Great</strong>&nbsp;?</span>
+        <!-- <span id="call-to-action">What makes MIS&nbsp;<strong>Great</strong>?</span> -->
+        <span id="call-to-action">Welcome @<strong>MIS</strong></span>
+        <!-- <span id="call-to-action">Welcome to our&nbsp;<strong>Home</strong></span> -->
       </div>
       <div class="pattern-overlay"></div>
       <video id="homepage-video" autoplay loop muted poster="https://res.cloudinary.com/imgursoyjean/image/upload/v1538105409/mis/mis-ourschool/subject-building.jpg">
-        <source src="https://res.cloudinary.com/imgursoyjean/video/upload/v1538467772/mis/mis-homepage/mis-compressed.mp4"
-          type="video/mp4">
+        <source src="https://res.cloudinary.com/imgursoyjean/video/upload/v1541648534/mis/mis-homepage/MIS.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -254,6 +256,18 @@
         </div>
 
         <div class="carousel-item">
+          <img class="d-block showcase-description" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537496834/mis/mis-homepage/website_03.jpg"
+            alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="text-box">
+              <span class="showcase-main">Lorem ipsum dolor sit amet.</span>
+              <span class="showcase-sub">Lorem ipsum dolor sit amet consectetur.</span>
+              <span class="showcase-location">School Library &middot; Front Hall</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="carousel-item">
           <img class="d-block showcase-description" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537496844/mis/mis-homepage/arial-shot.jpg"
             alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
@@ -263,7 +277,7 @@
               <span class="showcase-location">Arial Shot</span>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="carousel-item">
           <img class="d-block showcase-description" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537496833/mis/mis-homepage/pool.jpg"
@@ -327,9 +341,9 @@
 
     <div class="three-links">
       <div class="container flex-links">
-        <a href="#">Enquire</a>
-        <a href="#">Enroll Now</a>
-        <a href="#">Book a visit</a>
+        <a data-toggle="modal" data-target="#enquiryForm">Inquire</a><!-- Modal button -->
+        <a>Enroll Now</a>
+        <a>Book a visit</a>
       </div>
     </div>
   </main>
@@ -357,12 +371,6 @@
             <time datetime="08:00+07:00">08:00 AM</time> till
             <time datetime="08:00+07:00">05:00 PM</time>
 
-            <!-- Modal button -->
-            <button type="button" role="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-              data-target="#enquiryForm">
-              Admissions Enquiry
-            </button>
-
             <!-- Modal -->
             <div class="modal" id="enquiryForm" tabindex="-1" role="dialog" aria-labelledby="enquiryForm" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -380,18 +388,21 @@
                       within
                       24 hours (local time, Monday to Friday). We look forward to answering all
                       of your questions.</p>
-                    <form>
+                    <form method="POST" action="https://script.google.com/macros/s/AKfycbxWrDnQYzxosZ1YC7T7cCcAmsh-nuzLT0ebRt0otw/exec">
+                      <!--input id must be honeypot or else it wont work-->
+                      <label class="sr-only">Keep this field blank</label>
+                      <input id="honeypot" type="text" name="honeypot" value="" />
                       <label aria-label="Parent's Details">
                         <h4>Your Details</h4>
                       </label>
                       <div class="form-group">
                         <label for="exampleFullName" hidden></label>
-                        <input type="text" class="form-control" id="exampleFullName" aria-describedby="fullName"
+                        <input type="text" name="name" class="form-control" id="exampleFullName" aria-describedby="fullName"
                           placeholder="Enter your full name">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1" hidden></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                           placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share
                           your email with anyone
@@ -400,7 +411,8 @@
                       <hr>
                       <div class="form-group">
                         <label for="exampleFormControlTextarea1" class="form-text text-muted" hidden></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Is there anything else you'd like to tell us?"></textarea>
+                        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
+                          placeholder="Is there anything else you'd like to tell us?"></textarea>
                       </div>
                       <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -422,8 +434,12 @@
               </div>
             </div>
             <!-- End of Modal -->
-
-            <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Map/Directions</a>
+            <div style="display:none;" id="thankyou_message">
+              <h2>
+                <em>Thanks</em> for contacting us!
+                We'll get back to you soon!
+              </h2>
+            </div>
           </span>
         </div>
         <div class="d-flex flex-column align-items-center col-md-4">
@@ -468,6 +484,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script data-cfasync="false" type="text/javascript" src="/assets/js/form-submission-handler.js"></script>
 
   <!-- Optional JavaScript -->
   <script>
@@ -475,9 +492,6 @@
       interval: 5000
     });
   </script>
-
-  <!-- <script id="CookieDeclaration" src="https://consent.cookiebot.com/889c84d8-1246-4048-b06c-b4cb9c1dfef1/cd.js" type="text/javascript"
-  async></script> -->
 </body>
 
 </html>
