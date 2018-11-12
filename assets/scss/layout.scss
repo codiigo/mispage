@@ -83,6 +83,7 @@ footer {
   color: white;
   text-align: center;
   padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: bolder;
   // cursor: default;
 }
@@ -99,7 +100,7 @@ footer {
   height: 60vh;
   width: 100%;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .sub-header-image {
@@ -203,4 +204,13 @@ input.form-control:focus {
 // Honeypot
 #honeypot {
   display: none; /*makes the field not visible to humans*/
+}
+
+.alert-danger.email-invalid {
+  padding: .25rem;
+  margin-bottom: 0;
+}
+
+.email-invalid {
+  color: red;
 }
