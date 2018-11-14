@@ -25,3 +25,4 @@ This is the last resort. If this is necessary, you may find the article to Reset
 - [ ] [Frontend Checklist](https://frontendchecklist.io)
 - [x] Privacy & Cookie Policy
 - [ ] SEO (json-ld format)
+- [x] [Hamburger Mobile Menu](https://codepen.io/havardob/pen/zZvLgw?editors=0100)
