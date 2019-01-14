@@ -326,3 +326,10 @@ label {
     flex-direction: column;
   }
 }
+
+a.navbar-brand {
+  font-size: .9rem;
+  img.navbar__logo {
+    width: 30px;
+  }
+}
