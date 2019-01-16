@@ -86,3 +86,10 @@ aside a:focus {
   top: 0;
 }
 // End of Sticky sidebar
+
+.principal-photo {
+  object-fit: cover;
+  height: 50vh;
+  float: left;
+  margin: 1%;
+}
