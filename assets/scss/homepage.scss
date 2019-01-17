@@ -102,9 +102,10 @@ mark {
   .showcase-location {
     position: absolute;
     bottom: -30vh;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,);
     border-top: 5px solid white;
     padding-top: 5px;
+    white-space: nowrap;
   }
 }
 
