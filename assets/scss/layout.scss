@@ -338,3 +338,15 @@ a.navbar-brand {
     width: 30px;
   }
 }
+
+// bootstrap dismissable alert fixed at bottom
+.alert--fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  text-align: center;
+}

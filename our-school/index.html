@@ -35,6 +35,14 @@
 </head>
 
 <body>
+  <div class="alert alert--fixed-bottom alert-warning alert-dismissible fade show" role="alert">
+    <strong>Note:</strong> We are currently undergoing construction on our website. We'll update the contents as soon
+    as we can.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
   <!-- mobile view -->
   <nav class="navbar navbar-fixed-top d-block d-xl-none d-flex justify-content-between navbar-light bg-light">
     <a class="navbar-brand" href="#">
@@ -524,6 +532,7 @@
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+    $('.alert').alert();
   </script>
 </body>
 
