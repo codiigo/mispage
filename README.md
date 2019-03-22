@@ -7,11 +7,11 @@
 ### TODO LIST
 
 - [x] Git Repo
-- [x] Transparent Navbar
 - <strike>[ ] sftp Filezilla</strike> `not working`
-- [ ] [Formspree](https://formspree.io) `OR use MailThis.to`
-- [ ] [MailThis.to](https://mailthis.to/)
-- [ ] Mobile Responsive design
+- <strike>[ ] [Formspree](https://formspree.io) `OR use MailThis.to`
+- <strike>[ ] [MailThis.to](https://mailthis.to/)
+- [x] sendForm (google script)
+- [ ] Mobile Responsive design `@ 85%`
 - [ ] [Frontend Checklist](https://frontendchecklist.io)
 - [x] Privacy & Cookie Policy
 - [ ] SEO (json-ld format)
