@@ -8,10 +8,10 @@
 
 - [x] Git Repo
 - <strike>[ ] sftp Filezilla</strike> `not working`
-- <strike>[ ] [Formspree](https://formspree.io) `OR use MailThis.to`
-- <strike>[ ] [MailThis.to](https://mailthis.to/)
+- <strike>[ ] [Formspree](https://formspree.io)</strike> `OR use MailThis.to`
+- <strike>[ ] [MailThis.to](https://mailthis.to/)</strike>
 - [x] sendForm (google script)
-- [ ] Mobile Responsive design `@ 85%`
+- [ ] Mobile Responsive design `85%`
 - [ ] [Frontend Checklist](https://frontendchecklist.io)
 - [x] Privacy & Cookie Policy
 - [ ] SEO (json-ld format)
