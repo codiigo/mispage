@@ -133,16 +133,14 @@ footer {
 }
 
 .btn-info {
+  &:hover {
+    background: white;
+    color: $crete;
+  }
   background: white;
   color: $crete;
   border: none;
   font-weight: bolder;
-
-}
-
-.btn-info:hover {
-  background: white;
-  color: $crete;
 }
 
 .three-links {
@@ -156,6 +154,10 @@ footer {
   }
 
   a {
+    &:hover {
+      color: inherit;
+    }
+    color: inherit;
     cursor: pointer;
     text-decoration: none;
     font-weight: bolder;
