@@ -4,7 +4,8 @@
   "description": "dev stage for MIS homepage",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass --watch assets/scss -o dist/css/*.min.css --output-style compressed"
+    "compile:sass": "node-sass --watch assets/scss -o dist/css/*.min.css --output-style compressed",
+    "render": "http-server"
   },
   "repository": {
     "type": "git",
