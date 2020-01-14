@@ -35,7 +35,54 @@
 </head>
 
 <body>
-  <nav class="subpage-tint d-none d-lg-block">
+  <div class="alert alert--fixed-bottom alert-warning alert-dismissible fade show" role="alert">
+    <strong>Note:</strong> We are currently undergoing construction on our website. We'll update the contents as soon
+    as we can.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- mobile view -->
+  <nav class="navbar navbar-fixed-top d-block d-xl-none d-flex justify-content-between navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="navbar__logo" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537503015/mis-favicon/apple-touch-icon.png"
+        alt="MIS logo">
+      Mooltripakdee International School
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-school">Our School</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/academics">Academics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admissions">Admissions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-team">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end - mobile view -->
+  <nav class="subpage-tint d-none d-xl-block">
     <div class="container">
 
       <!-- desktop view -->
@@ -58,9 +105,6 @@
         <!-- <a class="btn" data-toggle="modal" data-target="#enquiryForm" href="#">Enquiry</a> -->
       </div>
       <!-- end - desktop view -->
-
-      <!-- mobile view -->
-      <!-- end - mobile view -->
     </div>
   </nav>
 
@@ -302,6 +346,7 @@
     $('#header-carousel').carousel({
       interval: 5000
     });
+    $('.alert').alert();
   </script>
 </body>
 

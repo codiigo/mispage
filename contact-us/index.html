@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
 
-  <title>Our School &vert; Mooltripakdee International School</title>
+  <title>Contact Us &vert; Mooltripakdee International School</title>
 
   <!-- cookiebot consent banner -->
   <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="889c84d8-1246-4048-b06c-b4cb9c1dfef1" type="text/javascript"
@@ -35,10 +35,19 @@
 </head>
 
 <body>
+  <div class="alert alert--fixed-bottom alert-warning alert-dismissible fade show" role="alert">
+    <strong>Note:</strong> We are currently undergoing construction on our website. We'll update the contents as soon
+    as we can.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
   <!-- mobile view -->
   <nav class="navbar navbar-fixed-top d-block d-xl-none d-flex justify-content-between navbar-light bg-light">
     <a class="navbar-brand" href="#">
-      <img class="navbar__logo" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537503015/mis-favicon/apple-touch-icon.png" alt="MIS logo">
+      <img class="navbar__logo" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537503015/mis-favicon/apple-touch-icon.png"
+        alt="MIS logo">
       Mooltripakdee International School
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -73,7 +82,7 @@
     </div>
   </nav>
   <!-- end - mobile view -->
-  <nav class="subpage-tint d-none d-lg-block">
+  <nav class="subpage-tint d-none d-xl-block">
     <div class="container">
 
       <!-- desktop view -->
@@ -114,24 +123,60 @@
       <h1>Contact Us</h1>
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius aperiam exercitationem tempore, eaque maxime beatae, quo et doloribus sed obcaecati tempora ut aliquam omnis odio?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius aperiam exercitationem tempore, eaque
+            maxime beatae, quo et doloribus sed obcaecati tempora ut aliquam omnis odio?</p>
         </div>
         <div class="col-sm-12 col-md-6">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="email" placeholder="Enter email">
-              <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzYXRvw_wdpP6ge_TeefouZX-vsSXBHUqBlO3r7BGr1Q2mqoPj2/exec">
+            <div class="form-elements">
+              <p>Please fill in the short form below and one of our dedicated admissions team
+                will get back to
+                you
+                within
+                24 hours (local time, Monday to Friday). We look forward to answering all
+                of your questions.</p>
+              <label aria-label="Parent's Details">
+                <h4>Your Details</h4>
+              </label>
+              <div class="form-group">
+                <label for="exampleFullName" hidden></label>
+                <input type="text" name="name" class="form-control" id="exampleFullName" aria-describedby="fullName"
+                  placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" hidden></label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share
+                  your email with anyone
+                  else.</small>
+              </div>
+              <hr>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-text text-muted" hidden></label>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Is there anything else you'd like to tell us?"></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <small>
+                  <label class="form-check-label text-muted" for="exampleCheck1"></label>
+                  By ticking this box, you are accepting our
+                  <a href="https://www.iubenda.com/privacy-policy/63134805/legal" target="_blank" rel="noopener noreferrer"
+                    title="Privacy Policy">&nbsp;Privacy
+                    &amp; Cookie Policy</a> and giving us your permission
+                  to
+                  use this information which
+                  may be regarded as direct marketing in relation to our school.
+                </small>
+              </div>
+              <button type="submit" class="btn btn-outline-secondary">Submit Enquiry</button>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+            <div style="display:none;" class="thankyou_message">
+              <h2>
+                <em>Thanks</em> for contacting us!
+                We'll get back to you soon!
+              </h2>
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck">
-              <label class="form-check-label" for="exampleCheck">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
@@ -144,7 +189,6 @@
 
     <div class="three-links">
       <div class="container flex-links">
-        <a data-toggle="modal" data-target="#enquiryForm">Inquire</a><!-- Modal button -->
         <a href="#">Enroll Now</a>
         <a href="#">Book a visit</a>
       </div>
@@ -174,82 +218,6 @@
             <time datetime="08:00+07:00">08:00 AM</time>&nbsp;till
             <time datetime="08:00+07:00">05:00 PM</time>
           </span>
-
-          <!-- Modal -->
-          <div class="modal" id="enquiryForm" tabindex="-1" role="dialog" aria-labelledby="enquiryForm" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-
-              <div class="modal-content">
-                <!-- Modal Content -->
-                <div class="modal-header">
-                  <!-- Modal Header -->
-                  <h5 class="modal-title">Enquiry Form</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div> <!-- End of Modal Header -->
-                <div class="modal-body">
-                  <!-- Modal Body -->
-                  <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzYXRvw_wdpP6ge_TeefouZX-vsSXBHUqBlO3r7BGr1Q2mqoPj2/exec">
-                    <div class="form-elements">
-                      <p>Please fill in the short form below and one of our dedicated admissions team
-                        will get back to
-                        you
-                        within
-                        24 hours (local time, Monday to Friday). We look forward to answering all
-                        of your questions.</p>
-                      <label aria-label="Parent's Details">
-                        <h4>Your Details</h4>
-                      </label>
-                      <div class="form-group">
-                        <label for="exampleFullName" hidden></label>
-                        <input type="text" name="name" class="form-control" id="exampleFullName" aria-describedby="fullName"
-                          placeholder="Enter your full name">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail1" hidden></label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" 
-                          placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share
-                          your email with anyone
-                          else.</small>
-                      </div>
-                      <hr>
-                      <div class="form-group">
-                        <label for="exampleFormControlTextarea1" class="form-text text-muted" hidden></label>
-                        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"
-                          placeholder="Is there anything else you'd like to tell us?"></textarea>
-                      </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <small>
-                          <label class="form-check-label text-muted" for="exampleCheck1"></label>
-                          By ticking this box, you are accepting our
-                          <a href="https://www.iubenda.com/privacy-policy/63134805/legal" target="_blank" rel="noopener noreferrer"
-                            title="Privacy Policy">&nbsp;Privacy
-                            &amp; Cookie Policy</a> and giving us your permission
-                          to
-                          use this information which
-                          may be regarded as direct marketing in relation to our school.
-                        </small>
-                      </div>
-                      <button type="submit" class="btn btn-outline-secondary">Submit Enquiry</button>
-                    </div>
-
-                    <div style="display:none;" class="thankyou_message">
-                      <h2>
-                        <em>Thanks</em> for contacting us!
-                        We'll get back to you soon!
-                      </h2>
-                    </div>
-                  </form>
-
-                </div> <!-- End of Modal Body -->
-              </div> <!-- End of Modal Content -->
-
-            </div>
-          </div>
-          <!-- End of Modal -->
 
         </div>
         <div class="d-flex flex-column align-items-center col-md-4">
@@ -301,6 +269,7 @@
     $('#header-carousel').carousel({
       interval: 5000
     });
+    $('.alert').alert();
   </script>
 </body>
 

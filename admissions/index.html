@@ -35,7 +35,54 @@
 </head>
 
 <body>
-  <nav class="subpage-tint d-none d-lg-block">
+  <div class="alert alert--fixed-bottom alert-warning alert-dismissible fade show" role="alert">
+    <strong>Note:</strong> We are currently undergoing construction on our website. We'll update the contents as soon
+    as we can.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- mobile view -->
+  <nav class="navbar navbar-fixed-top d-block d-xl-none d-flex justify-content-between navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="navbar__logo" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537503015/mis-favicon/apple-touch-icon.png"
+        alt="MIS logo">
+      Mooltripakdee International School
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-school">Our School</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/academics">Academics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/admissions">Admissions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-team">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end - mobile view -->
+  <nav class="subpage-tint d-none d-xl-block">
     <div class="container">
 
       <!-- desktop view -->
@@ -58,9 +105,6 @@
         <!-- <a class="btn" data-toggle="modal" data-target="#enquiryForm" href="#">Enquiry</a> -->
       </div>
       <!-- end - desktop view -->
-
-      <!-- mobile view -->
-      <!-- end - mobile view -->
     </div>
   </nav>
 
@@ -79,14 +123,26 @@
       <div class="row">
         <div class="col-md-3 sticky-parent d-none d-md-block">
           <aside class="sticky">
-          <h5>Quick Links</h5>
+            <h5>Quick Links</h5>
             <ul>
-              <a href="#admissions-procedure"><li>&rtrif;Admissions Procedure</li></a>
-              <a href="#requirements"><li>&rtrif;Requirements for enrollee</li></a>
-              <a href="#form"><li>&rtrif;Enrollment form instructions</li></a>
-              <a href="#dates"><li>&rtrif;Term Dates 2018-19</li></a>
-              <a href="#fees"><li>&rtrif;Tuition Fees 2018-19</li></a>
-              <a href="#school-hours"><li>&rtrif;School Hours</li></a>
+              <a href="#admissions-procedure">
+                <li>&rtrif;Admissions Procedure</li>
+              </a>
+              <a href="#requirements">
+                <li>&rtrif;Requirements for enrollee</li>
+              </a>
+              <a href="#form">
+                <li>&rtrif;Enrollment form instructions</li>
+              </a>
+              <a href="#dates">
+                <li>&rtrif;Term Dates 2018-19</li>
+              </a>
+              <a href="#fees">
+                <li>&rtrif;Tuition Fees 2018-19</li>
+              </a>
+              <a href="#school-hours">
+                <li>&rtrif;School Hours</li>
+              </a>
             </ul>
           </aside>
         </div>
@@ -210,7 +266,7 @@
                   <td>&#3647; 67,000.00</td>
                 </tr>
                 <!-- End of Early Years Tuition Fee -->
-                
+
                 <!-- Primary Tuition Fee -->
                 <tr>
                   <th scope="row" rowspan="2" class="align-middle text-center eyfs-absolute-position">Primary</th>
@@ -328,7 +384,8 @@
                   <td class="align-middle">3 - 4</td>
                   <td class="align-middle">5 days</td>
                   <td class="align-middle">9:00 AM - 2:00PM</td>
-                  <td>We will be accepting students who have turned <mark>3 years old</mark> on or before August 31st of the new
+                  <td>We will be accepting students who have turned <mark>3 years old</mark> on or before August 31st
+                    of the new
                     academic year.</td>
                 </tr>
                 <tr>
@@ -336,7 +393,8 @@
                   <td class="align-middle">4 - 5</td>
                   <td class="align-middle">5 days</td>
                   <td class="align-middle">9:00 AM - 2:00PM</td>
-                  <td>We will be accepting students who have turned <mark>4 years old</mark> on or before August 31st of the new
+                  <td>We will be accepting students who have turned <mark>4 years old</mark> on or before August 31st
+                    of the new
                     academic year.</td>
                 </tr>
                 <!-- End of Early Years Foundation Stage (EYFS) -->
@@ -348,14 +406,16 @@
                   <td class="align-middle">5 - 7</td>
                   <td class="whitespace-nowrap align-middle">5 days</td>
                   <td class="whitespace-nowrap align-middle">9:00 AM - 3:30PM</td>
-                  <td>We will be accepting students who have turned <mark>5 or 6 years old</mark> respectively on or before August 31st of the new academic year.</td>
+                  <td>We will be accepting students who have turned <mark>5 or 6 years old</mark> respectively on or
+                    before August 31st of the new academic year.</td>
                 </tr>
                 <tr>
                   <td class="whitespace-nowrap align-middle">Key Stage 2</td>
                   <td class="align-middle">8 - 11</td>
                   <td class="whitespace-nowrap align-middle">5 days</td>
                   <td class="whitespace-nowrap align-middle">9:00 AM - 3:30PM</td>
-                  <td>We will be accepting students who have turned <mark>7, 8, 9 and 10 years old</mark> respectively on or before August 31st of the new academic year.</td>
+                  <td>We will be accepting students who have turned <mark>7, 8, 9 and 10 years old</mark> respectively
+                    on or before August 31st of the new academic year.</td>
                 </tr>
                 <!-- End of Primary (Key Stage 1 & 2) -->
 
@@ -366,14 +426,16 @@
                   <td class="align-middle">11 - 14</td>
                   <td class="whitespace-nowrap align-middle">5 days</td>
                   <td class="whitespace-nowrap align-middle">8:20 AM - 3:30PM</td>
-                  <td>We will be accepting students who have turned <mark>11, 12 and 13 years old</mark> respectively on or before August 31st of the new academic year.</td>
+                  <td>We will be accepting students who have turned <mark>11, 12 and 13 years old</mark> respectively
+                    on or before August 31st of the new academic year.</td>
                 </tr>
                 <tr>
                   <td class="whitespace-nowrap align-middle">Key Stage 2</td>
                   <td class="align-middle">14 - 16</td>
                   <td class="whitespace-nowrap align-middle">5 days</td>
                   <td class="whitespace-nowrap align-middle">8:20 AM - 3:30PM</td>
-                  <td>We will be accepting students who have turned <mark>14 and 15 years old</mark> respectively on or before August 31st of the new academic year.</td>
+                  <td>We will be accepting students who have turned <mark>14 and 15 years old</mark> respectively on or
+                    before August 31st of the new academic year.</td>
                 </tr>
                 <!-- End of Secondary (Key Stage 3 & 4) -->
               </tbody>
@@ -451,8 +513,7 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1" hidden></label>
-                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" 
-                          placeholder="Enter email">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share
                           your email with anyone
                           else.</small>
@@ -544,6 +605,7 @@
     $('#header-carousel').carousel({
       interval: 5000
     });
+    $('.alert').alert();
   </script>
 </body>
 

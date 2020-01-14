@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
 
-  <title>Our School &vert; Mooltripakdee International School</title>
+  <title>Events &vert; Mooltripakdee International School</title>
 
   <!-- cookiebot consent banner -->
   <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="889c84d8-1246-4048-b06c-b4cb9c1dfef1" type="text/javascript"
@@ -35,6 +35,14 @@
 </head>
 
 <body>
+  <div class="alert alert--fixed-bottom alert-warning alert-dismissible fade show" role="alert">
+    <strong>Note:</strong> We are currently undergoing construction on our website. We'll update the contents as soon
+    as we can.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
   <!-- mobile view -->
   <nav class="navbar navbar-fixed-top d-block d-xl-none d-flex justify-content-between navbar-light bg-light">
     <a class="navbar-brand" href="#">
@@ -74,7 +82,7 @@
     </div>
   </nav>
   <!-- end - mobile view -->
-  <nav class="subpage-tint d-none d-lg-block">
+  <nav class="subpage-tint d-none d-xl-block">
     <div class="container">
 
       <!-- desktop view -->
@@ -137,7 +145,29 @@
         </section>
       </div>
 
+      <div class="row">
+        <section class="calendar d-none d-sm-block">
+          <iframe
+            src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mooltripakdeeinternational%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FBangkok"
+            style="
+              border: 1px solid grey;
+            " 
+            height="600"
+            frameborder="0" 
+            scrolling="no">
+          </iframe>
+        </section>
+      </div>
+      <p>If you can't see the calendar properly or using a mobile phone, 
+        <a href="https://calendar.google.com/calendar/embed?src=mooltripakdeeinternational%40gmail.com&ctz=Asia%2FBangkok"
+            target="_blank"
+            noopener
+            noreferrer>
+          click this link
+        </a>
+      </p>
     </article>
+
 
     <div class="three-links">
       <div class="container flex-links">
@@ -298,6 +328,7 @@
     $('#header-carousel').carousel({
       interval: 5000
     });
+    $('.alert').alert();
   </script>
 </body>
 

@@ -45,6 +45,10 @@ footer {
   padding: .2rem .5rem;
 }
 
+.navbar-fixed-top {
+  z-index: 9999;
+}
+
 .fixed-navbar {
   display: flex;
   align-items: center;
@@ -159,6 +163,7 @@ footer {
     font-weight: bolder;
     font-size: 18pt;
     padding: 10px;
+    color: white;
     text-transform: uppercase;
   }
 
@@ -334,4 +339,16 @@ a.navbar-brand {
   img.navbar__logo {
     width: 30px;
   }
+}
+
+// bootstrap dismissable alert fixed at bottom
+.alert--fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  text-align: center;
 }

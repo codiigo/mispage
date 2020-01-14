@@ -34,7 +34,54 @@
 </head>
 
 <body>
-  <nav class="subpage-tint d-none d-lg-block">
+  <div class="alert alert--fixed-bottom alert-warning alert-dismissible fade show" role="alert">
+    <strong>Note:</strong> We are currently undergoing construction on our website. We'll update the contents as soon
+    as we can.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- mobile view -->
+  <nav class="navbar navbar-fixed-top d-block d-xl-none d-flex justify-content-between navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="navbar__logo" src="https://res.cloudinary.com/imgursoyjean/image/upload/v1537503015/mis-favicon/apple-touch-icon.png"
+        alt="MIS logo">
+      Mooltripakdee International School
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-school">Our School</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/academics">Academics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admissions">Admissions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-team">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end - mobile view -->
+  <nav class="subpage-tint d-none d-xl-block">
     <div class="container">
 
       <!-- desktop view -->
@@ -55,15 +102,12 @@
         <a href="/contact-us" class="btn btn-outline-success navbar-link">Contact Us</a>
       </div>
       <!-- end - desktop view -->
-
-      <!-- mobile view -->
-      <!-- end - mobile view -->
     </div>
   </nav>
 
   <header class="sub-header-image">
     <figure>
-        <img src="../img/map.jpg" alt="">
+      <img src="../img/map.jpg" alt="">
       <figcaption class="container">
         <span class="sub-header-location">Diorama Map</span>
       </figcaption>
@@ -148,12 +192,15 @@
                       <div class="form-group">
                         <label for="exampleFullName" hidden></label>
                         <input type="text" name="name" class="form-control" id="exampleFullName" aria-describedby="fullName"
-                          placeholder="Enter your full name">
+                          placeholder="Enter your full name" required>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1" hidden></label>
                         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                          placeholder="Enter email">
+                          placeholder="Enter email" required>
+                        <span class="email-invalid" style="display:none;">
+                          Must be a valid email address
+                        </span>
                         <small id="emailHelp" class="form-text text-muted">We'll never share
                           your email with anyone
                           else.</small>
@@ -167,7 +214,7 @@
                       <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <small>
-                          <label class="form-check-label text-muted" for="exampleCheck1"></label>
+                          <label class="form-check-label" for="exampleCheck1"></label>
                           By ticking this box, you are accepting our
                           <a href="https://www.iubenda.com/privacy-policy/63134805/legal" target="_blank" rel="noopener noreferrer"
                             title="Privacy Policy">&nbsp;Privacy
@@ -180,7 +227,7 @@
                       <button type="submit" class="btn btn-outline-secondary">Submit Enquiry</button>
                     </div>
 
-                    <div style="display:none;" class="thankyou_message">
+                    <div class="thankyou_message" style="display:none;">
                       <h2>
                         <em>Thanks</em> for contacting us!
                         We'll get back to you soon!
@@ -245,6 +292,7 @@
     $('#header-carousel').carousel({
       interval: 5000
     });
+    $('.alert').alert();
   </script>
 </body>
 
