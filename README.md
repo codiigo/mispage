@@ -2,6 +2,10 @@
 
 [![Generic badge](https://img.shields.io/badge/status-incomplete-red.svg)](https://shields.io/)
 
+![alt text][logo]
+
+[logo]: screenshot.png "MIS homepage Screenshot"
+
 ---
 
 ### TODO LIST
