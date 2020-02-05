@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jaeyson/mispage#readme",
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "http-server": "^0.12.1"
